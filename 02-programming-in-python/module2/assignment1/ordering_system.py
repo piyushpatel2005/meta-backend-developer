@@ -29,7 +29,7 @@ def calculate_subtotal(order):
     sum = 0.0
     for item in order:
         sum += item['price']
-    return sum
+    return round(sum, 2)
 
 
 def calculate_tax(subtotal):
@@ -70,7 +70,7 @@ def summarize_order(order):
     ### WRITE SOLUTION HERE
 
     subtotal = calculate_subtotal(order)
-    total = subtotal + calculate_tax(subtotal)
+    total = round(subtotal + calculate_tax(subtotal), 2)
     names = [item['name'] for item in order]
     return names, total
 
