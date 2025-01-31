@@ -282,7 +282,7 @@ Click on the **Menu** link to verify that the menu page loads correctly. The men
 
 **Menu item page**
 
-The menu item page will display the entire contents of data stored in the menu\_item table for each menu item. The page will be accessed via a dynamic link from the menu page. It will use URL parameters to query the database.
+The menu item page will display the entire contents of data stored in the menu_item table for each menu item. The page will be accessed via a dynamic link from the menu page. It will use URL parameters to query the database.
 
 **Step 1:**
 
@@ -358,7 +358,7 @@ Surround the code such as:
 
 Select the complete text inside the `href` attribute beginning with `<` and ending with `>` and replace it with the code below:
 
-`{% url 'menu_item' pk=item2.pk %} `
+`{% url 'menu\_item' pk=item2.pk %} `
 
 **Note:**  The code replaced must not remove the enclosing quotes `" "` for the string. The code will generate a link for the Menu item page, which you will configure next.
 
