@@ -97,7 +97,7 @@ Open the **models.py** file and create a class called `Menu` with the following 
 
 Additionally, define a **dunder method** `__str__()` inside this model class such as:
 
-```
+```python
 def __str__(self):
        return self.name
 ```
@@ -127,7 +127,7 @@ Open the project-level and app-level  **urls.py**  files to ensure the URL path 
 
 **project-level urls.py**
 
-```
+```python
 from django.contrib import admin
 from django.urls import path, include
 
@@ -139,7 +139,7 @@ urlpatterns = [
 
 **app-level urls.py**
 
-```
+```python
 from django.urls import path
 from . import views
 
@@ -226,7 +226,7 @@ Expand the app-level directory **templates** in the explorer panel and observe t
 
 Create a file called **menu.html** and add the following starter code inside it:
 
-```
+```html
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
@@ -350,7 +350,7 @@ Look for the template code added while designing the menu page:
 
 Surround the code such as:
 
-```
+```html
 <a href="<Replace with DTL code for url>">
 {{ item.menu_item_name }}
 </a>
@@ -370,7 +370,7 @@ Create a file called **menu_item.html** inside the templates directory present i
 
 Add the below starter code inside **menu_item.html** page:
 
-```
+```html
 {% extends 'base.html' %} 
 {% load static %} 
 {% block content %}
@@ -464,7 +464,7 @@ The menu item page for **Greek Salad** should appear as below:
 
 Open the file **_footer.html** already in place and paste the following code inside it:
 
-```
+```html
 {% load static %}
 <footer>
   <article>
