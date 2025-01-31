@@ -43,8 +43,8 @@ To complete this graded assessment, you will need to modify the following files:
 - views.py
 - admin.py
 - templates/menu.html
-- templates/menu_item.html
-- templates/partials/_footer.html
+- templates/menu\_item.html
+- templates/partials/\_footer.html
 
 **Supporting files**
 
@@ -58,7 +58,7 @@ Additionally, it's important to know that the following files already consists s
 - templates/about.html
 - templates/index.html
 - templates/book.html
-- templates/partials/_footer.html
+- templates/partials/\_footer.html
 
 
 It's also important to know that the project contains supportive files for static images and CSS styling.
@@ -90,7 +90,7 @@ Open the **models.py** file and create a class called `Menu` with the following 
 
 | **Attribute** | **Field type** | **Arguments** |
 | --- | --- | --- |
-| name | CharField | max_length = 200 |
+| name | CharField | max\_length = 200 |
 | price | IntegerField |
 
 **Note:** The class called `Booking` is already in place.
@@ -204,7 +204,7 @@ Add the following view logic inside the `menu()` view function:
 
 | **Key** | **Value** |
 | --- | --- |
-| **"menu"** as a string | **menu_data** |
+| **"menu"** as a string | **menu\_data** |
 
 
 - Return the `render()` function from the view with the following arguments passed inside it in this order:
@@ -284,7 +284,7 @@ Click on the **Menu** link to verify that the menu page loads correctly. The men
 
 **Menu item page**
 
-The menu item page will display the entire contents of data stored in the menu_item table for each menu item. The page will be accessed via a dynamic link from the menu page. It will use URL parameters to query the database.
+The menu item page will display the entire contents of data stored in the menu\_item table for each menu item. The page will be accessed via a dynamic link from the menu page. It will use URL parameters to query the database.
 
 **Step 1:**
 
@@ -292,7 +292,7 @@ Open the file **models.py** and update the `Menu` model with the attributes belo
 
 | **Attribute** | **Form field type** | **Arguments** |
 | --- | --- | --- |
-| menu_item_description | TextField | max_length=1000, default=' ' |
+| menu\_item\_description | TextField | max\_length=1000, default=' ' |
 
 
 Once the code in the **models.py** file is updated, run the commands to perform the migrations.
@@ -348,7 +348,7 @@ Before you configure the new menu item page, open the file **menu.html** and upd
 
 Look for the template code added while designing the menu page:
 
-`{{ item.menu_item_name }}`
+`{{ item.menu\_item\_name }}`
 
 Surround the code such as:
 
@@ -360,7 +360,11 @@ Surround the code such as:
 
 Select the complete text inside the `href` attribute beginning with `<` and ending with `>` and replace it with the code below:
 
-`{% url 'menu\_item' pk=item2.pk %} `
+```
+{% raw %}
+{% url 'menu\_item' pk=item2.pk %}
+{% endraw %}
+```
 
 **Note:**  The code replaced must not remove the enclosing quotes `" "` for the string. The code will generate a link for the Menu item page, which you will configure next.
 
@@ -473,7 +477,7 @@ Open the file **_footer.html** already in place and paste the following code ins
 {% load static %}
 <footer>
   <article>
-        <img src="<Replace with DTL code for adding static image for footer logo>" />
+        <img src="<Replace with DTL code for adding static image for footer logo>" />
   </article>
   <article>
     <p>Copyright Little Lemon</p>
@@ -485,7 +489,11 @@ Open the file **_footer.html** already in place and paste the following code ins
 **Step 2:**
 
 Replace the code inside angled brackets present inside the img tag with: 
-`{% static 'img/logo_footer.png' %}`  
+```
+{% raw %}
+{% static 'img/logo_footer.png' %}
+{% endraw %}
+```     
 
 **Note:** Make sure you also remove the angled (`< >`) brackets.
 
