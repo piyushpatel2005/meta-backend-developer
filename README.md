@@ -12,3 +12,5 @@ It covers below courses.
 - [Version Control](03-version-control)
 - [Introduction to Databases](04-introduction-to-databases)
 - [Django Web Framework](05-django-web-framework)
+- [APIs](06-apis)
+- [Coding Interview Preparation](09-coding-interview-prep)

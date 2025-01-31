@@ -9,6 +9,10 @@ The outcomes of this module are:
 - Recognize the role pseudocode plays in coding interviews and 
 - Grasp the fundamentals of computer science
 
+- [Knowledge Check: Coding Interview](module1/coding_interview.html)
+- [Knowledge Check: Time Complexity](module1/time_complexity.html)
+- [Quiz](index.html)
+
 ## Module 2: Data Structures
 
 Data structures and limitations of those. 
