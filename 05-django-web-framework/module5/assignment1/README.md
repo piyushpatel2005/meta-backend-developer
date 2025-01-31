@@ -226,7 +226,7 @@ Expand the app-level directory **templates** in the explorer panel and observe t
 
 Create a file called **menu.html** and add the following starter code inside it:
 
-```html
+```raw
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
@@ -370,7 +370,7 @@ Create a file called **menu_item.html** inside the templates directory present i
 
 Add the below starter code inside **menu_item.html** page:
 
-```html
+```raw
 {% extends 'base.html' %} 
 {% load static %} 
 {% block content %}
@@ -464,7 +464,7 @@ The menu item page for **Greek Salad** should appear as below:
 
 Open the file **_footer.html** already in place and paste the following code inside it:
 
-```html
+```raw
 {% load static %}
 <footer>
   <article>
