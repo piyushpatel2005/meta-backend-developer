@@ -226,7 +226,8 @@ Expand the app-level directory **templates** in the explorer panel and observe t
 
 Create a file called **menu.html** and add the following starter code inside it:
 
-```raw
+```
+{% raw %}
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
@@ -244,6 +245,7 @@ Create a file called **menu.html** and add the following starter code inside it:
 </div>
 <!--End col-->
 {% endblock %}
+{% endraw %}
 ```
 
 **Step 14:**
@@ -370,7 +372,8 @@ Create a file called **menu_item.html** inside the templates directory present i
 
 Add the below starter code inside **menu_item.html** page:
 
-```raw
+```
+{% raw %}
 {% extends 'base.html' %} 
 {% load static %} 
 {% block content %}
@@ -407,6 +410,7 @@ Add the below starter code inside **menu_item.html** page:
    </article>
 </section>
 {% endblock %}
+{% endraw %}
 ```
 
 
@@ -464,7 +468,8 @@ The menu item page for **Greek Salad** should appear as below:
 
 Open the file **_footer.html** already in place and paste the following code inside it:
 
-```raw
+```
+{% raw %}
 {% load static %}
 <footer>
   <article>
@@ -474,6 +479,7 @@ Open the file **_footer.html** already in place and paste the following code ins
     <p>Copyright Little Lemon</p>
   </article>
 </footer>
+{% endraw %}
 ```
 
 **Step 2:**
