@@ -225,6 +225,7 @@ Expand the app-level directory **templates** in the explorer panel and observe t
 **Step 13: **
 
 Create a file called **menu.html** and add the following starter code inside it:
+**Note:** In raw code blocks, ignore the `{% raw %}` at the top and `{% endraw %}` at the end. These are included only for Jekyll build step but are not part of the actual Django template code.
 
 ```
 {% raw %}

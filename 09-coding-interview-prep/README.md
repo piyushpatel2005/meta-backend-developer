@@ -24,10 +24,21 @@ It covers
 - Heaps
 - Graphs
 
+- [Knowledge Check: Basic Data Structures](module2/data_structures.html)
+- [Knowledge Check: Collection data structures](module2/collection_data_structures.html)
+- [Knowledge Check: Advanced data structures](module2/advanced_data_structures.html)
+- [Quiz](module2/index.html)
+
 ## Module 3. Algorithms
 
 It covers selection sort, insertion sort, quick sort. For searching algorithm, divide and conquer, recursion, greedy algorithms and dynamic programming.
 
+- [Knowledge Check: Sorting and Searching](module3/sorting_and_searching.html)
+- [Knowledge Check: Working with Algorithms](module3/working_with_algorithms.html)
+- [Quiz](module3/index.html)
+
 ## Module 4: Final Project
 
 This will assess your knowledge of data structures, algorithms and coding interview preparation.
+
+- [Quiz](module4/index.html)
